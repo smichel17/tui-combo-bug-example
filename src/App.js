@@ -5,18 +5,29 @@ import 'tui-chart/dist/tui-chart.css'
 
 function App() {
   let data = {
-    categories: [ 1, 2, 3, 4, 5 ],
     series: {
       area: [
         {
           name: "Goal",
-          data: [ 3, 3, 3, 3, 3 ],
+          data: [
+            { x: 1, y: 3, },
+            { x: 2, y: 3, },
+            { x: 3, y: 3, },
+            { x: 4, y: 3, },
+            { x: 5, y: 3, },
+          ],
         },
       ],
       line: [
         {
           name: "Data",
-          data: [ 5, 4, 3, 2, 1 ],
+          data: [
+            { x: 1, y: 5, },
+            { x: 2, y: 4, },
+            { x: 3, y: 3, },
+            { x: 3, y: 2, },
+            { x: 3, y: 1, },
+          ],
         },
       ],
     },
